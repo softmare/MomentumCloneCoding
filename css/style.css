@@ -1,3 +1,75 @@
 .hidden {
     display: none;
 }
+
+
+body {
+    display: flex;
+    color : white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: column; 
+    height: calc(100vh - 40px);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#weather {
+    font-size: 20px;
+    align-self: flex-end;
+    margin: 10px 10px 30vh 5px;
+}
+
+#clock {
+    display: flex;
+    font-size:8em;
+}
+
+#greeting {
+    font-size: 4em;
+    margin: 1vh 0;
+}
+
+#todo-form input {
+    margin: 10px;
+    width: 300px;
+    padding : 10px;
+    font-size: 3em;
+    background-color: transparent;
+    border:none;
+    color:white;
+    text-decoration: underline;
+}
+
+#todo-form input::placeholder {
+    color: white;
+    text-decoration: underline;
+}
+
+#todo-list {
+    height: 20vh;
+    width: 30vw;
+    overflow-y: auto;
+}
+
+#todo-list::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color:rgb(89, 150, 138);
+    border-radius:1000px;
+}
+
+#todo-list li span{
+    font-size:30px;
+    margin: 0 7px 0 5px;
+}
+
+#todo-list li button {
+    font-size:20px;
+    background-color: transparent;
+    border:none;
+}
